@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okan Çifçi - Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Okan Çifçi</h1>
+                <h2 class="animate-text-delay">Mechatronics Engineering Student</h2>
+                <p class="animate-text-delay-2">Focusing on technology development and working on applied projects.</p>
+                <div class="hero-buttons animate-text-delay-3">
+                    <a href="#projects" class="btn primary-btn">My Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <p>Scroll Down</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">👋 About Me</h2>
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p>I am a 2nd year Mechatronics Engineering student at Istanbul Bilgi University. I chose this field in line with my interests, so I enjoy learning and applying new things we learn at school. I try to improve myself by constantly developing projects with what I learn at school or on my own, making an effort to learn how to use them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">💻 Skills</h2>
+            <div class="skills-section">
+                <div class="skill-tags reveal-bottom">
+                    <span class="skill-tag">SolidWorks</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C, C++</span>
+                    <span class="skill-tag">Swift</span>
+                    <span class="skill-tag">Arduino</span>
+                    <span class="skill-tag">English</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">🦾 Projects</h2>
+            <p class="section-subtitle reveal-bottom">Projects I've developed in mobile app development, hardware integration, and web technologies.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card reveal-left">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>ROBOTIC ARM</h3>
+                            <span class="project-type">Academic Project</span>
+                        </div>
+                        <p>This project focuses on image processing, where we created a system that tracks hand movements using Python - OpenCV and copies them. We controlled servo motors through Arduino and adjusted the technical design using SolidWorks to fit our project.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Arduino</span>
+                            <span>SolidWorks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal-right">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>SWIPE PHOTO CLEAN</h3>
+                            <span class="project-type">iOS Mobile App</span>
+                        </div>
+                        <p>During my Swift programming language learning process, I contributed to this project, gaining experience in app development, design, and onboarding.</p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>iOS</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">📜 Education</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal-bottom">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Istanbul Bilgi University</h3>
+                        <p class="timeline-subtitle">Mechatronics Engineering</p>
+                        <p class="timeline-date">2022 - present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">🏆 Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item reveal-item">
+                    <i class="fas fa-futbol"></i>
+                    <p>Football</p>
+                </div>
+                <div class="hobby-item reveal-item">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Basketball</p>
+                </div>
+                <div class="hobby-item reveal-item">
+                    <i class="fas fa-football-ball"></i>
+                    <p>American Football</p>
+                </div>
+                <div class="hobby-item reveal-item">
+                    <i class="fas fa-snowboarding"></i>
+                    <p>Snowboarding</p>
+                </div>
+                <div class="hobby-item reveal-item">
+                    <i class="fas fa-table-tennis"></i>
+                    <p>Tennis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">📍 Contact</h2>
+            <p class="section-subtitle reveal-bottom">If you would like to get more information about my projects or collaborate, please feel free to contact me.</p>
+            
+            <div class="contact-form-container reveal-bottom">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://github.com/okancfc" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gaffar-okan-%C3%A7if%C3%A7i-804a49321/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Okan Çifçi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
