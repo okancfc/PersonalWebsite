@@ -180,7 +180,7 @@ const contactForm = () => {
     const form = document.getElementById('contactForm');
     
     if (form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             // Form verilerini al
@@ -188,18 +188,33 @@ const contactForm = () => {
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
             
-            // Normalde burada bir API'ye form verilerini gönderirdik
-            // Şimdilik sadece konsola yazdıralım
-            console.log('Form gönderildi:', { name, email, message });
-            
-            // Kullanıcıya geri bildirim
-            alert('Mesajınız gönderildi! Teşekkür ederiz.');
-            
-            // Formu sıfırla
-            form.reset();
+            // Formspree Endpoint (Bunu kendi oluşturduğun Formspree URL'siyle değiştir)
+            const formspreeURL = "https://formspree.io/f/manqrpbn";
+
+            try {
+                // Form verilerini Formspree'ye gönder
+                const response = await fetch(formspreeURL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                if (response.ok) {
+                    alert('Your message has been sent successfully! Thank you.');
+                    form.reset();
+                } else {
+                    alert('There was an error sending the message. Please try again.');
+                }
+            } catch (error) {
+                alert('Connection error! Please check your internet connection.');
+            }
         });
     }
 };
+
+// Sayfa yüklendiğinde fonksiyonu çalıştır
+document.addEventListener("DOMContentLoaded", contactForm);
+
 
 // CSS sınıfı eklemek için yardımcı fonksiyon
 const addCSSClass = (selector, className) => {
